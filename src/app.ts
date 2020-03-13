@@ -12,6 +12,6 @@ app.get('/',(req:Request,res:Response)=>{
 })
 
 
-const server = app.listen( 8080,()=>{
+const server = app.listen( process.env.PORT||8080,()=>{
     console.log(`Listening on 8080`);
 })
